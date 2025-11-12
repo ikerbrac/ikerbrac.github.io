@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia MundoManiacos</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #b3e5fc 0%, #e3f2fd 40%, #ffffff 100%);
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: #003366;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      margin-top: auto;
+      background-color: #003366;
+      color: white;
+    }
+
+    nav {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #004d99;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: color 0.3s;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    main {
+      text-align: center;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .destinos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 30px 0;
+    }
+
+    .destino {
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .destino:hover {
+      transform: translateY(-5px);
+    }
+
+    .destino img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #ffffffee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 20px;
+      font-size: 18px;
+    }
+
+    td {
+      border-top: 1px solid #99ccff;
+      padding: 12px 16px;
+    }
+
+    tr:hover {
+      background-color: #e3f2fd;
+    }
+
+    .video-container {
+      margin: 30px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-reserva {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-reserva:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Agencia MundoManiacos</h1>
+    <p>Tu mejor agencia para tus mejores viajes</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="destino1.html">Atenas</a> |
+    <a href="destino2.html">Tokio</a> |
+    <a href="destino3.html">Puerto Rico</a>
+  </nav>
+
+  <main>
+    <h2>Destinos destacados</h2>
+
+    <div class="destinos">
+      <div class="destino">
+        <a href="destino1.html">
+          <img
+            src="https://lonelyplanetes.cdnstatics2.com/cdn/ff/AXimBmGFDxTonoiuaE2letFKxx5tTOx_BJuOrDaUsbk/1726123102/public/styles/1536x864_scale_crop/public/media/grecia_atenas_monastiraki_shutterstock_1193397715_cge2010_shutterstock.jpg?itok=NIi-Jg2Y"
+            alt="Foto de Atenas">
+        </a>
+        <h3>Atenas</h3>
+        <p>Deja atrás los mitos y conoce Atenas por ti mismo</p>
+        <a href="destino1.html" class="btn-reserva">Conocer Atenas</a>
+      </div>
+
+      <div class="destino">
+        <a href="destino2.html">
+          <img
+            src="https://elhype.com/wp-content/uploads/2020/01/tokyo-lifestyle-arquitectura-elhype-c-690x450.jpg"
+            alt="Foto de Tokio">
+        </a>
+        <h3>Tokio</h3>
+        <p>Para los mas modernos y tradicionales a su vez</p>
+        <a href="destino2.html" class="btn-reserva">Conocer Tokio</a>
+      </div>
+
+      <div class="destino">
+        <a href="destino3.html">
+          <img
+            src="https://imagenes.elpais.com/resizer/v2/FNXIYDYUCRGFBJIPXT6TE6JQNY.jpg?auth=a9d26b61c4d1870ad7f7fdd25b54be2c77dbcee32b1f11281eeb225663b42f9d&width=1200"
+            alt="Foto de Puerto Rico">
+        </a>
+        <h3>Puerto Rico</h3>
+        <p>Dejate perder por sus maravillosas calles</p>
+        <a href="destino3.html" class="btn-reserva">Conocer Puerto Rico</a>
+      </div>
+    </div>
+
+    <h2>Precios por destino</h2>
+    <table>
+      <tr>
+        <th>Destino</th>
+        <th>Airbnb</th>
+        <th>Hotel 3★</th>
+        <th>Hotel 4★</th>
+        <th>Hotel 5★</th>
+        <th>Vuelo ida y vuelta (€)</th>
+      </tr>
+      <tr>
+        <td>Atenas</td>
+        <td>450 €</td>
+        <td>500 €</td>
+        <td>800 €</td>
+        <td>1100 €</td>
+        <td>180 €</td>
+      </tr>
+      <tr>
+        <td>Tokio</td>
+        <td>600 €</td>
+        <td>700 €</td>
+        <td>1000 €</td>
+        <td>1500 €</td>
+        <td>950 €</td>
+      </tr>
+      <tr>
+        <td>Puerto Rico</td>
+        <td>550 €</td>
+        <td>650 €</td>
+        <td>950 €</td>
+        <td>1300 €</td>
+        <td>780 €</td>
+      </tr>
+    </table>
+
+    
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/139707637" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+
+  </main>
+
+  <footer>
+    <p>© 2025 Agencia MundoManiacos - Todos los derechos reservados</p>
+    <p>Contacto: info@mundomaniacos.com | Tel: +34 912 345 678</p>
+  </footer>
+</body>
+</html>
